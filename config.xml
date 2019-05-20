@@ -16,6 +16,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -33,4 +34,7 @@
     <preference name="SuppressLongPressGesture" value="true" />
     <preference name="Suppress3DTouchGesture" value="true" />
     <preference name="InAppBrowserStorageEnabled" value="true" />
+    <edit-config file="*-Info.plist" mode="merge" platform="ios" target="NSLocationWhenInUseUsageDescription">
+        <string>Required to send machine location.</string>
+    </edit-config>
 </widget>

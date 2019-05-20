@@ -15,6 +15,9 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <edit-config file="*-Info.plist" mode="merge" platform="ios" target="NSLocationWhenInUseUsageDescription">
+        <string>Required to send machine location.</string>
+    </edit-config>
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="handset" />
     <preference name="deployment-target" value="7.0" />
